@@ -7,7 +7,7 @@ const Header = ({hero}) => {
         <header>
             <Navigation/>
             <h1>
-                <h1>{characters[hero].name}</h1>
+                {characters[hero].name}
             </h1>
         </header>
     );

@@ -17,7 +17,7 @@ const MainBlock = ({hero, setHero}) => {
             )
             }
 
-            <Route path={`${navItems[1].route}`} element={<AboutMe/>}></Route>
+            <Route path={`${navItems[1].route}`} element={<AboutMe heroId={hero} />}></Route>
             <Route path={`${navItems[2].route}`} element={<StarWars/>}></Route>
             <Route path={`${navItems[3].route}`} element={<Contact/>}></Route>
             <Route path={'*'} element={<h1>ERROR!</h1>}></Route>
